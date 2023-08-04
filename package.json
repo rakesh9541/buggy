@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev:api": "yarn workspace @bug-tracker/api dev",
+    "build": "yarn workspace @bug-tracker/frontend build && yarn workspace @bug-tracker/api build",
     "dev:frontend": "yarn workspace @bug-tracker/frontend dev",
     "format:all": "yarn workspaces run format",
     "prepare": "husky install"
